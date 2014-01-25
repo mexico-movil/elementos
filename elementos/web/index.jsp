@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Curso de  de Spring </title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Bienvenidos al maravilloso mundo de spring :)</h1>
     </body>
 </html>

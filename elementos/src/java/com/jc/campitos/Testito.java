@@ -6,6 +6,9 @@
 
 package com.jc.campitos;
 
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -16,11 +19,20 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class Testito {
     
   public static void main(String args[]){
-      System.out.println("Hola mundo");
-      FileSystemXmlApplicationContext ctx=
-              new FileSystemXmlApplicationContext("web/WEB-INF/dispatcher-servlet.xml");
-   // ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("lugar de xml dentro de"
-   //         + "los paquetes de clases");
+      System.out.println("Bienvenido al maravilloso mundo de SPRING");
+    /* FileSystemXmlApplicationContext ctx=
+          new FileSystemXmlApplicationContext("web/WEB-INF/dispatcher-servlet.xml");
+    
+      
+      ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("lugar de xml dentro de"
+           + "los paquetes de clases");
+      
+      */
+      
+      ApplicationContext ctx=new AnnotationConfigApplicationContext(ApConfig.class);
+  ServicioCuenta cuenta=ctx.getBean(ServicioCuenta.class);
+ System.out.println(cuenta.crearCuenta());
+  
   }  
     
 }
