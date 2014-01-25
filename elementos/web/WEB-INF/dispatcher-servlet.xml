@@ -28,6 +28,7 @@
 <resources mapping="/recursos/**" location="/recursos/" />  
     
     <context:component-scan base-package="com.jc.campitos" />  
+    <context:component-scan base-package="com.jc.campitos.capitulo2" />  
     <context:annotation-config />     
 
 
