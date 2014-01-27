@@ -10,7 +10,11 @@ package com.jc.campitos.capitulo2;
  *
  * @author campitos
  */
-public class NominaAsalariado extends Nomina{
+public class NominaHonorariosImpl implements ServicioNomina {
 
-   
+ public String pagarNomina() {
+   return "Nomina pagada a honorarios al 16%";
+    }
+    
+    
 }

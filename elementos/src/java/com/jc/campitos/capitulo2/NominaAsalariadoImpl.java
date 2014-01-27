@@ -10,7 +10,10 @@ package com.jc.campitos.capitulo2;
  *
  * @author campitos
  */
-public class NominaAsalariado extends Nomina{
-
-   
+public class NominaAsalariadoImpl implements ServicioNomina{
+    
+     public String pagarNomina() {
+   return "Nomina pagada a un... asalariadooooo!!! como dijera la estupida Laura Bozo";
+    }
+    
 }

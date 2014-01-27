@@ -10,6 +10,6 @@ package com.jc.campitos.capitulo2;
  *
  * @author campitos
  */
-public class ServicioNomina {
-    
+public interface ServicioNomina {
+    public String pagarNomina();
 }

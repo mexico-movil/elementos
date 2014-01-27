@@ -10,6 +10,7 @@ package com.jc.campitos.capitulo2;
  *
  * @author campitos
  */
-public class NominaHonorarios {
-    
+public class NominaHonorarios extends Nomina {
+
+  
 }
