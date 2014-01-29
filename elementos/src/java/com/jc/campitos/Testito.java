@@ -31,7 +31,10 @@ public class Testito {
            + "los paquetes de clases");
       
       */
-
+      
+      
+      
+/*   Cargamos en contexto solo con codigo java   */
       ApplicationContext ctx=new AnnotationConfigApplicationContext(ApConfig.class);
   ServicioCuenta cuenta=ctx.getBean(ServicioCuenta.class);
  System.out.println(cuenta.crearCuenta());
