@@ -7,7 +7,7 @@
 package com.jc.campitos;
 
 
-import com.jc.campitos.capitulo2.ServicioNomina;
+
 import java.io.Console;
 import java.io.IOException;
 import org.springframework.context.ApplicationContext;

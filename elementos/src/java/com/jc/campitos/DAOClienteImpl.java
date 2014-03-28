@@ -34,7 +34,7 @@ public class DAOClienteImpl extends DAO{
     begin();
     getSession().save(cliente);
     commit();
-    DAO.close();
+    close();
     
     }
  
@@ -47,7 +47,7 @@ public class DAOClienteImpl extends DAO{
         Query q = getSession().createQuery("from Cliente");
         List<Cliente> clientes = (List<Cliente>)q.list();
         commit();
-        DAO.close();
+        close();
          
 return clientes; 
         
@@ -61,7 +61,7 @@ return clientes;
             begin();
              getSession().delete(p);
             commit();
-            DAO.close();
+            close();
  }   
         /**
          * Este metodo busca un cliente por medio de su Id
@@ -74,7 +74,7 @@ return clientes;
         q.setInteger("id",id);
         Cliente p = (Cliente)q.uniqueResult();
         commit();
-        DAO.close();
+        close();
 return p;  
    
   }  }

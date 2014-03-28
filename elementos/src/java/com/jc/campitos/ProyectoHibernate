@@ -1,0 +1,16 @@
+Pasos:
+
+1. Nos aseguramos de haber incorporado la biblioteca de hibernate
+2. Nos aseguramos de tener cargado el driver de base de datos correspondiente
+2. Nos aseguramos de haber creado el archivo de configuracion xml. "hibernate.cfg.xml
+3. Creamos la clase para el mapeo de la tabla con el mismo numero de campos
+4. Nos aseguramos de tener la clase DAO y las siguientes operaciones
+5.Para cada clase a Mapear  heredar esta clase e invocar los metodos
+       begin()
+       getSession() seguida de:
+             a. save()  
+             b. createQuery(" from Table") 
+             c. createQuery("from Table where id=:id")  
+             d. delete(tabla);
+      commit();
+      close();

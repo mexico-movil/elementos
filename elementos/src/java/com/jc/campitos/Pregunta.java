@@ -4,16 +4,18 @@
  * and open the template in the editor.
  */
 
-package com.jc.campitos.capitulo2;
+package com.jc.campitos;
+
+import java.util.ArrayList;
 
 /**
  *
  * @author campitos
  */
-public class NominaAsalariadoImpl implements ServicioNomina{
+public class Pregunta {
+    int id;
+    String titulo;
+    ArrayList<Opcion> opciones;
     
-     public String pagarNomina() {
-   return "Nomina pagada a un... asalariadooooo!!! como dijera la estupida Laura Bozo";
-    }
     
 }

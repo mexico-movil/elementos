@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 
-package com.jc.campitos.capitulo2;
+package com.jc.campitos;
 
 /**
  *
  * @author campitos
  */
-public class NominaAsalariado extends Nomina{
-
-   
+class Cliente {
+    
 }
