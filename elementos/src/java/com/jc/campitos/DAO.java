@@ -15,16 +15,16 @@ private static final ThreadLocal session = new ThreadLocal();
 private static final SessionFactory sessionFactory =
         
 new AnnotationConfiguration().configure().buildSessionFactory();
-public DAO() {
-}
-public static Session getSession() {
-Session session = (Session) DAO.session.get();
-if (session == null) {
-session = sessionFactory.openSession();
-DAO.session.set(session);
-}
-return session;
-}
+     public DAO() {
+     } 
+       public static Session getSession() {
+      Session session = (Session) DAO.session.get();
+      if (session == null) {
+      session = sessionFactory.openSession();
+     DAO.session.set(session);
+          }
+     return session;
+       }
 protected  void begin() {
 getSession().beginTransaction();
 }
